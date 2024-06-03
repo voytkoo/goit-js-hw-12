@@ -178,6 +178,9 @@ cursor: pointer;
   }
   
 .btn:hover {
-  
+  background-color: #6C8CFF;
+}
+.btn-hidden {
+  display: none;
 }
     
