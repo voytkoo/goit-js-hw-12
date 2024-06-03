@@ -1,5 +1,5 @@
 import { fetchImages } from "./js/pixabay-api";
-import { renderImage, showError, clearGallery, showLoad, hideLoad, refreshgalleries, showBtnLoad, hideBtnLoad } from "./js/render-functions";
+import { renderImage, showError, clearGallery, showLoad, hideLoad, refreshGalleries, showBtnLoad, hideBtnLoad } from "./js/render-functions";
 // import { moduleLightbox } from "./js/render-functions";
 
 
@@ -35,7 +35,7 @@ async function handleSubmit(event) {
   } else {
     renderImage(data.hits);
     showBtnLoad();
-    refreshgalleries();
+    refreshGalleries();
   }
     
 } catch (error) {
@@ -54,8 +54,10 @@ async function handleSubmit(event) {
         if (page * 15 >= data.totalHits) {
             hideBtnLoad();
             showError("We're sorry, but you've reached the end of search results.");
-        }
-        refreshGalleries();
+      }
+      
+      refreshGalleries()
+      
     } catch (error) {
         showError('An error occurred while fetching images');
         console.error(error);

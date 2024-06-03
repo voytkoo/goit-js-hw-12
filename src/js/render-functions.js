@@ -70,7 +70,7 @@ btnLoad.style.display = 'none';
 }
 
 
-export function refreshgalleries() {
+export function refreshGalleries() {
     galleries.refresh();
 
 }
