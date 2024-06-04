@@ -21,7 +21,9 @@
 
 body {
   padding: 20px;
-  background-color: #f8f9fa;
+  background-color: #fff;
+  background-image: linear-gradient(to right, #d803f4, hsl(0, 0%, 13%));
+  
 }
 
 .form-search {
@@ -84,6 +86,7 @@ body {
   margin: 0 auto;
 
 }
+
 
 .gallery-item {
   flex-basis: calc((100% - 48px) / 3);
@@ -172,9 +175,10 @@ a {
   margin: 20px auto;
   padding: 10px 20px;
   background-color: #4E75FF;
-border-radius: 8px;
-color: #fff;
-cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
   }
   
 .btn:hover {
