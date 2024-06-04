@@ -64,7 +64,10 @@ export function smoothScroll() {
     const galleryItems = document.querySelectorAll('.gallery-item');
     if (galleryItems.length > 0) {
         const cardHeight = galleryItems[0].getBoundingClientRect().height;
-        window.scrollBy(0, -window.innerHeight);
+        window.scrollBy({
+    top: cardHeight * 2,
+    behavior: 'smooth',
+  });
 
     }
 }
